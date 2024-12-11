@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Project Teaser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #141e30, #243b55);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px;
+            background: #000;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        section.hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('teaser-image.jpg') no-repeat center center/cover;
+        }
+        section.hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+        section.hero p {
+            font-size: 18px;
+            margin: 10px 0 20px;
+        }
+        .cta-button {
+            text-decoration: none;
+            padding: 15px 30px;
+            background: #f39c12;
+            color: #000;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #d35400;
+        }
+        footer {
+            padding: 20px;
+            background: #000;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Something Exciting is Coming!</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Stay Tuned...</h2>
+        <p>Our groundbreaking project launches soon. Be the first to know!</p>
+        <a href="#subscribe" class="cta-button">Get Updates</a>
+    </section>
+
+    <section id="subscribe" style="padding: 50px; background: #243b55;">
+        <h3>Subscribe for Updates</h3>
+        <p>Enter your email to stay updated about our launch.</p>
+        <form action="#" method="POST" style="margin: 20px auto; max-width: 400px;">
+            <input type="email" name="email" placeholder="Your email address" required style="width: 80%; padding: 10px; border-radius: 5px; border: none; margin-bottom: 10px;">
+            <br>
+            <button type="submit" style="padding: 10px 20px; background: #f39c12; color: #000; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Upcoming Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
